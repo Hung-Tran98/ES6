@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BaiTapES6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- DropDown -->
+
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>Chọn</option>
+                <option value="1">Học Sinh</option>
+                <option value="2">Nhân Viên</option>
+                <option value="3">Khách Hàng</option>
+            </select>
+        </div>
+
+        <!--FORM INPUT -->
+
+        <form action="">
+            <!-- Chung PerSon-->
+
+            <div class="prop__main form-control">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Mã</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Họ tên</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Địa chỉ</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Email</span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <!-- Học Sinh -->
+
+            <div class="student form-control mt-5">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Toán</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Lý</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Hóa</span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+
+            <!-- Nhân viên -->
+            <div class="employee form-control mt-5">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Số ngày làm</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Lương một ngày</span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <!-- Khách Hàng -->
+            <div class="customer mt-5 form-control">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Công ty</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Trị giá hóa đơn</span>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-success text-light" id="basic-addon1">Đánh giá</span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+        </form>
+
+
+
+        <!-- TABLE -->
+
+        <table class="table mt-5 table-bordered table-striped table-success">
+            <thead>
+                <tr>
+                    <th scope="col">Mã</th>
+                    <th scope="col">Họ tên</th>
+                    <th scope="col">Địa chỉ</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Toán</th>
+                    <th scope="col">Lý</th>
+                    <th scope="col">Hóa</th>
+                    <th scope="col">Điểm trung bình</th>
+                    <th scope="col">Số ngày làm việc</th>
+                    <th scope="col">Lương theo ngày</th>
+                    <th scope="col">Tổng lương</th>
+                    <th scope="col">Công ty</th>
+                    <th scope="col">Hóa đơn</th>
+                    <th scope="col">Đánh giá</th>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>25</td>
+                    <td>50$</td>
+                    <td>1250</td>
+                    <td>Otto</td>
+                    <td>1000$</td>
+                    <td>Good</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
